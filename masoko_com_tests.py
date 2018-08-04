@@ -1,4 +1,3 @@
-import time
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -23,6 +22,7 @@ class SearchText(unittest.TestCase):
         # get list of returned data (elements)
 
         returned_data = self.driver.find_element_by_class_name("product-item")
+        returned_data
         self.assertGreater(0, len(returned_data))
 
     @classmethod
